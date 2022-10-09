@@ -31,7 +31,7 @@ key = st.text_input(
 
 mode = st.selectbox(
     "What action would you like to perform?",
-    ("Encode🔒", "Decode🔑")
+    ("Encode", "Decode")
 )
 
 if st.button('Result'):
@@ -41,5 +41,5 @@ if st.button('Result'):
     else:
         st.write(Decode(key, message))
 else:
-    st.write('Please enter all the required information 👀!!')
+    st.write('Please enter all the required information!!')
 
